@@ -323,6 +323,84 @@ list-style: none;
     opacity: 1; /* Show on hover */
 }
 
+/* -------Column section ---------- */
+
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: 3rem 0px;
+    margin: 5rem 0px;
+}
+.col-1 {
+    width: 650px;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s; /* Add transition for smooth scaling */
+}
+
+.col-img {
+    width: 650px;
+    height:450px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.col-img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.281); 
+    /* z-index: 1; */
+}
+
+.col-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* z-index: 2; */
+}
+
+
+/* Scale effect on hover */
+.col-img:hover {
+    transform: scale(1.1); /* Adjust the scaling factor as needed */
+}
+.detail{
+    position: absolute;
+    bottom: 30%;
+    left: 5%;
+}
+.detail p{
+    font-size: 40px;
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+.detail-btn {
+    padding: 1rem 2rem;
+    background-color: black;
+    color: white;
+      display: inline-block;
+      border-radius: 4px;
+      margin-top: 1rem;
+}
+
+
+
+
+
+
+
+
 
 
 @media(max-width:1350px){
