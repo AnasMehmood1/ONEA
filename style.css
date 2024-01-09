@@ -1,466 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,200;0,400;0,600;0,700;0,800;1,500;1,600;1,800&display=swap');
 *{
     margin: 0;
     padding: 0;
 }
-.slider{
-    background:linear-gradient(rgb(0,0,0,0.3),rgb(0,0,0,0.6)), url("https://source.unsplash.com/900x350/? fashion women");
-    height: 60vh;
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 40px;
+.mini-header{
+    width: 100%;
+  padding: 1.5rem 0px;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid lightgray;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
 }
-.container{
-    position: absolute;
-    top: 25%;
-    left: 15%;
-}
-.summer{
-    color: white;
+.icons{
+    display: flex;
+    gap: 1.5rem;
     font-size: 20px;
+    font-family: 'Advent Pro', sans-serif;
+
 }
-.heading{
-    color: white;
+.other{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Advent Pro', sans-serif;
+
+    gap: 1rem;
+}
+.serach{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Advent Pro', sans-serif;
+
+}
+.serach input{
+    outline: none;
+    border: none;
+    
+}
+.serach::placeholder{
+    font-size: 17px;
+    color: black;
+}
+.store{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.main-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   padding: 2rem 0px;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+.logo h2{
+    font-family: 'Advent Pro', sans-serif;
     font-size: 45px;
 }
-.text{
-   font-size: 16px;
-    color: white;
-}
-.header{
-    width: 100%;
-    height: 70px;
-
-}
-nav{
+.links{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin:0px 30px 0px 30px;
+justify-content: center ;
+align-items: center;
+gap: 1.5rem;
+list-style: none;
 }
-
-.logo h2{
-    font-size: 40px;
-    text-transform: uppercase;
-}
-.menu{
-     display: inline-block;
-}
-.menu ul a li{
-    display: inline-block;
-    margin-left: 12px;
-    font-size: 8px;
-    list-style: none;
-    color: black;
-}
-.icon ul li{
-    list-style: none;
-    font-size: 8px;
-    margin-left: 10px;
-}
-.box{
-   width: 80%;
-   height: 30vh;
-   margin: auto;
-    background-image: url("https://source.unsplash.com/900x350/? fashion wear");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.container-1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding-top: 70px;
-}
-.heading-1 h1{
-    font-size: 50px;
-    color: white;
-    font-weight: lighter;
-    padding-bottom: 20px;
-}
-.text-1 p a{
-    color: rgb(245, 245, 245);
-    font-size: 15px;
-  
-}
-.featured{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 50px 50px;
-}
-.featured ul li{
-    display: inline-block;
-    margin-left: 45px;
+.links li{
     font-size: 18px;
-}
-.product{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 50px;
-}
-#women-product{
-    margin-top: 20px;
-}
-.rate{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 110px 110px 0px 110px;
-
-}
-.rate h2{
-    font-size: 30px;
-}
-.rate select{
-   border: 2px solid black;
-   background-color: white;
-   color: black;
-   padding: 4px 8px;
-}
-.next{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 20px;
-    margin-left: 110px;
-    margin-bottom: 50px;
-}
-.b{
-    width: 40px;
-    height: 40px;
-    border:2px solid black;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-.b:hover{
-    background-color: black;
-    color: white;
-    border: 2px solid white;
-}
-.name{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 5px;
-    /* gap: 80px; */
-}
-.card{
-    width: 260px;
-}
-/* .card p{
-    margin-left: 36px;
-} */
-.sale{
-    position: relative;
-    top: 39px;
-    right: -193px;
-    background-color:black;
-    color: white;
-    padding: 10px 4px;
-    border-radius: 50%;
-    font-size: x-small;
-} 
-.section{
-    height:70vh;
-  
-}
-.container-2{
-    background: url("https://source.unsplash.com/900x350/? fashion model");
-    height: 40vh;
-    background-size: cover;
-    margin-bottom:40%;
-
-    
-}
-.box-1{
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    position: relative;
-    top: 150px;
-    margin-bottom: 70px;
-}
-#fashion{
-    position: relative;
-    top: -39%;
-    transform: rotate(-90deg);
-    left: 31px;
-    
-}
-.right{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    position: relative;
-    right: 50px;
-}
-.right h2{
-    font-size: 40px;
     color: black;
-    margin-bottom: 20px;
-}
-.right a{
-    color: black;
-}
-.container-3{
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    flex-direction: column;
-    margin-bottom: 70px;
-    margin-top: 100px;
-}
-.container-3 h1{
-    font-size: 40px;
-}
-.para{
-    font-size: 15px;
-    margin-bottom: 20px;
-}
-.container-3 p{
-    text-align: center;
-    margin-top: 12px;
-}
-.container-4{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-bottom: 50px;
-}
-.image{
-    background: url("https://source.unsplash.com/900x350/? fashion women");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 300px;
-    height: 236px;
-  }
-
-.name-1{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 294px;
-    margin: 12px 1px;
-}
-.fashion {
-    display: inline-block;
-    background-color: rgb(8, 7, 7);
-    color: rgb(247, 247, 247);
-    width: 40px;
-    height: 124px;
-  }
-.fashion p{
-    margin-top: 58px;
-    margin-right: 5px;
-    transform: rotate(-90deg);
-}
-.container-5{
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    flex-wrap: wrap;
-   
-    margin: 70px 0px;
-    padding: 70px 0px;
-    gap: 30px;
-}
-.brand img{
-    width: 100%;
-}
-
-.container-6{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 70px;
-}
-.title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: -20px;
-    
-}
-.title h1{
-    font-size: 35px;
-}
-.container-7{
-    width: 100%;
-    background-color: #ebd3b5c9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2px;
-    padding: 20rem 0rem;
-}
-
-.footer{
-    width: 100%;
-    background-color: black;
-    color: white;
-}
-.container-8{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap:40px;
-     padding-top: 150px;
-     padding-bottom: 150px;
-}
-.ft-logo h2{
- font-size: 30px;
-text-transform: uppercase;
-margin-bottom: 15px;
-}
-.location{
-    margin-bottom: 37px;
-}
-.location h2{
-font-size: 20px;
-margin-bottom: 30px;
-}
-.location ul li{
-    margin: 12px 0px;
-    list-style: none;
-}
-.info h2{
-font-size: 20px;
-margin-bottom: 10px;
-}
-.info ul li{
-    margin: 12px 0px;
-    list-style: none;
-}
-.discover h2{
-    font-size: 20px;
-margin-bottom: 10px;
-}
-.discover ul li{
-    margin: 12px 0px;
-    list-style: none;
-}
-.contact{
-    margin-bottom: 40px;
-}
-.contact h2{
-    font-size: 20px;
-margin-bottom: 10px;
-}
-.contact ul li{
-    margin: 12px 0px;
-    list-style: none;
-}
-.download{
-    margin-bottom: 40px;
-}
-.download h2{
-    font-size: 20px;
-margin-bottom: 10px;
-}
-.download ul li{
-    margin: 12px 0px;
-    list-style: none;
-}
-.download p{
-    margin: 15px 0px;
-}
-.download input{
-    background-color: transparent;
-    color: white;
-    border-top:none ;
-    border-left: none;
-    border-right: none;
-    width: 250px;
-    outline: none;
-    padding-bottom: 12px;
-    margin-top: 12px;
-}
-.second-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* margin-top: 70px; */
-    width: 100%;
-    border-top: 1px solid gray;
-    padding-top: 18px;
-    padding-bottom: 18px;
-    background-color: black;
-}
-
-@media screen and (max-width:480px) {
-   .slider{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-       
-    }
-    .container{
-        right: 5%;
-        left: unset;
-    }
-    nav{
-        display: block;
-    }
-    .menu{
-        display: none;
-    }
- 
-    .icon {
-      display: none;
-}
-.logo h2{
-   display: flex;     
-   justify-content: center;
-   align-items: center;
-   
-}
-.heading-1 h1{
-    text-align: center;
-    padding-bottom: 10px;
-}
-.featured ul {
-   display: flex;
-   margin: 30px 0px;
-   justify-content: center;
-   align-items: center;
-}
-.featured ul li{
-    margin-left: 20px;
-}
-.section{
-    height: 90vh;
-}
-.container-2{
-    height: 90vh;
-    background-position: center;
-}
-.box-1{
-    flex-direction: column;
-    text-align: center;
-    left: unset;
-}
-.right{
-    right: unset;
-}
-.Img{
-    width: 80%;
-}
+    font-family: 'Advent Pro', sans-serif;
 }
