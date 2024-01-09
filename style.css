@@ -177,7 +177,151 @@ list-style: none;
 .btn{
     visibility: hidden;
 }
+/* -------Shop Section ----------- */
+.shop-container{
+    width: 100%;
+      padding-top: 5rem;
+}
+.shop-text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 
+}
+.welcome{
+     font-size: 45px;
+     margin-bottom: 1.5rem;
+     font-family: 'Advent Pro', sans-serif;
+}
+.shop-text p{
+    color: gray;
+    font-family: 'Advent Pro', sans-serif;
+}
+.shop-text span{
+    margin-top: 2rem;
+    color:  gray;
+    font-family: 'Advent Pro', sans-serif;
+    font-style: italic;
+}
+.fashion-container{
+    border: 2px solid black;
+    padding: 10rem 0px;
+    text-align: center;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.315),rgba(0, 0, 0, 0.452)), url("image/col_image_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 1rem;
+}
+.fashion-container h2{
+    font-size: 130px;
+    color: white;
+    border-bottom: 2px solid white;
+    padding: 0px 2rem 0px 2rem;
+    font-family: 'Advent Pro', sans-serif;
+}
+.fashion-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-direction: column;
+}
+.circle-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.circle,
+.cr{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color:#90b3bd;
+    position: relative;
+    color: white;
+}
+
+.circle-1,
+.cr{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color:#90b3bd;
+    position: relative;
+    color: white;
+}
+.cr:hover{
+    background-color: white;
+    color:#90b3bd ;
+
+}
+.cr h4{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+    font-family: 'Advent Pro', sans-serif;
+}
+.circle img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.circle-1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.circle::before {
+    content: "T-SHIRT";
+    font-family: 'Advent Pro', sans-serif;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    border-radius: 50%;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s;
+    background-color: rgba(0, 0, 0, 0.432);
+}
+.circle-1::before {
+    content: "LONG COAT";
+    font-family: 'Advent Pro', sans-serif;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    border-radius: 50%;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s;
+    background-color: rgba(0, 0, 0, 0.432);
+}
+
+.circle:hover::before,
+.circle-1:hover::before {
+    opacity: 1; /* Show on hover */
+}
 
 
 
