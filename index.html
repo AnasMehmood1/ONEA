@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  
     <title>Onea</title>
 </head>
 <body>
     <header>
-        <div class="mini-header">
+        <div class="mini-header" id="home">
             <div class="icons">
                 <i class="fa-brands fa-facebook-f"></i>
                 <i class="fa-brands fa-twitter"></i>
@@ -27,20 +28,19 @@
                 </div>
                 <div class="store">
                     <box-icon  name='cart'></box-icon>
-                    <p>2 item</p>
                 </div>
             </div>
         </div>
         <div class="main-header">
            <div class="logo">
-            <h2>Onea</h2>
+            <a href="#home"><h2>Onea</h2></a>
            </div>
            <div class="menu-items">
             <ul class="links">
-                <li>Home</li>
-                <li>About</li>
-                <li>Shop</li>
-                <li>Contact</li>
+               <a href="#home"> <li>Home</li></a>
+               <a href="#shop"> <li>Shop</li></a>
+                <a href="#about"><li>About</li></a>
+                <a href="#contact"><li>Contact</li></a>
             </ul>
            </div>
         </div>
@@ -69,7 +69,7 @@
      <!-- ---------------shopsection------------- -->
 
      
-    <div class="shop-container">
+    <div class="shop-container" id="shop">
         <div class="shop-text">
          <p class="welcome">WELCOME</p>
          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae <br>ab illo inventore veritatis  et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem <br> quia volupta sit aspernatur aut odit aut fugit, sed quia consequuntur...</p>
@@ -148,7 +148,7 @@
 
 
      <!-- ----------About section------------- -->
-     <div class="about-hero">
+     <div class="about-hero" id="about">
         <h1>collection <br> houses our first <br>-ever</h1>
         <div class="about-btn">About Us</div>
        </div>
@@ -201,9 +201,49 @@
         </div>
 
       </div>
+   
+      <!-- -----------footer--------- -->
 
+      <div class="footer-container" id="contact">
+         <div class="footer-logo">
+            <h2>Onea</h2>
+            <div class="icon">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-google"></i>
+                <i class="fa-brands fa-pinterest-p"></i>
+                <i class="fa fa-rss"></i>
+            </div>
+         </div>
+         <div class="support li">
+            <h2 class="ft-head">SUPPORT</h2>
+            <li>Contact Us</li>
+            <li>FAQs</li>
+            <li>Size Guide</li>
+            <li>Shipping & Returns</li>
+         </div>
+         <div class="shop li">
+            <h2 class="ft-head" >SHOP</h2>
+            <li>Men's Shopping</li>
+            <li>Women's Shopping</li>
+            <li>Kid's Shopping</li>
+            <li>Discount</li>
+         </div>
+         <div class="comapny li">
+            <h2 class="ft-head">COMPANY</h2>
+            <li>Our Story</li>
+            <li>Careers</li>
+            <li>Terms & Conditions</li>
+            <li>Privacy & Cookie policy</li>
+         </div>
+         <div class="contact li">
+            <h2  class="ft-head">CONTACT</h2>
+            <li>1-202-555-0105</li>
+            <li>1-202-555-0106</li>
+            <li>help@Onea.com</li>
+         </div>
+      </div>
 
-
-
+      <script src="index.js"></script>
 </body>
 </html>
