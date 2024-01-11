@@ -206,7 +206,6 @@ list-style: none;
     font-style: italic;
 }
 .fashion-container{
-    border: 2px solid black;
     padding: 10rem 0px;
     text-align: center;
     background-image:linear-gradient(rgba(0, 0, 0, 0.315),rgba(0, 0, 0, 0.452)), url("image/col_image_bg.jpg");
@@ -323,8 +322,77 @@ list-style: none;
     opacity: 1; /* Show on hover */
 }
 
-/* -------Column section ---------- */
 
+/* ------products--------- */
+
+.product-container{
+    width: 100%;
+    padding: 3rem 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.product-container h1{
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Advent Pro', sans-serif;
+    margin-bottom: 2rem;
+    color: gray;
+}
+.product-item{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+   column-gap: 2rem;
+   row-gap: 7rem;
+}
+.product{
+    width: 350px;
+    height: 400px;
+    text-align: center;
+    position: relative;
+}
+.product p{
+    font-size: 25px;
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.product span{
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 1rem;
+}
+.product img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.product:hover::before{
+ content:url("image/shopping-bag-solid-24.png") ;
+    font-family: 'Advent Pro', sans-serif;
+    background-color: rgba(0, 0, 0, 0.329);
+    top: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     float: right;
+    color: white;
+    transition:all .4s ease;
+   
+}
+
+ 
+/* -------About section ---------- */
 
 
 .container{
@@ -391,7 +459,8 @@ list-style: none;
     color: white;
       display: inline-block;
       border-radius: 4px;
-      margin-top: 1rem;
+      margin-top: 1rem; 
+
 }
 
 
