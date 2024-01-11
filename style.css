@@ -332,6 +332,7 @@ list-style: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 7rem;
 }
 .product-container h1{
     text-align: center;
@@ -391,10 +392,73 @@ list-style: none;
    
 }
 
+.campain-container{
+    padding: 4rem 0px;
+    width: 100%;
+    background-image: url("image/image_1_img.jpg");
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.campain-container h1{
+    font-size: 140px;
+    color: white;
+    font-family: 'Advent Pro', sans-serif;
+    border-bottom: 1px solid white;
+    padding: 0px 2rem .5rem 2rem;
+    margin-bottom: 2rem;
+}
+.img{
+    background-image: url("image/image_1_img_small.jpg");
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 800px;
+  height: 490px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.campain-container p{
+    color: white;
+    font-size: 25px;
+    font-style: italic;
+    margin: 3rem 0px;;
+}
  
 /* -------About section ---------- */
-
-
+.about-hero{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.212),rgba(0, 0, 0, 0.219)),  url("image/section_bg01.png");
+    height: 80vh;
+    margin-top: 5rem;
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-hero h1{
+     text-transform: uppercase;
+     color: white;
+     font-size: 90px;
+     font-family: 'Advent Pro', sans-serif;
+     font-weight: 700;
+     text-align: center;
+}
+.about-btn{
+    padding: 1.2rem 3.5rem;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    font-size: 25px;
+    font-family: 'Advent Pro', sans-serif;
+}
 .container{
     display: flex;
     justify-content: center;
@@ -402,7 +466,7 @@ list-style: none;
     flex-wrap: wrap;
     gap: 3rem;
     padding: 3rem 0px;
-    margin: 5rem 0px;
+    margin: 2rem 0px;
 }
 .col-1 {
     width: 650px;
@@ -528,6 +592,19 @@ list-style: none;
         padding: 0px 2rem 0px 2rem;
         font-family: 'Advent Pro', sans-serif;
     }
+    .img{
+        width: 550px;
+        height: 390px;
+    }
+}
+@media(max-width:550px){
+    .campain-container h1{
+        font-size: 100px;
+    }
+    .img{
+        width: 450px;
+        height: 390px;
+    }
 }
 
 @media(max-width:510px){
@@ -548,6 +625,13 @@ list-style: none;
         border-bottom: 2px solid white;
         padding: 0px 2rem 0px 2rem;
         font-family: 'Advent Pro', sans-serif;
+    }
+    .campain-container h1{
+        font-size: 100px;
+    }
+    .img{
+        width: 400px;
+        height: 390px;
     }
    
 }
@@ -613,6 +697,27 @@ list-style: none;
     background: rgba(0, 0, 0, 0.281); 
     /* z-index: 1; */
 }
+.campain-container{
+    background-position-x:15%;
 }
-
+.campain-container h1{
+    font-size: 80px;
+}
+.img{
+    width: 350px;
+   
+}
+.campain-container p{
+    font-size: 20px;
+}
+.img img{
+     width: 50px;
+}
+.about-hero h1{
+    font-size: 50px;
+}
+.about-btn{
+    padding: 1rem 2rem; 
+}
+}
 
