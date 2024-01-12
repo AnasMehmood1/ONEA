@@ -1,4 +1,6 @@
-# ONEA
+## Screenshots
+
+![Landing Page Screenshot](/image/preview%20image.png)
 # Fashion Store Landing Page
 
 Welcome to the Fashion Store Landing Page repository! This landing page is designed specifically for a fashion store, creating an engaging and visually appealing online presence.
@@ -13,9 +15,7 @@ This landing page showcases the latest trends, exclusive collections, and must-h
 - Easy navigation
 - Highlights latest trends and collections
 
-## Screenshots
 
-![Landing Page Screenshot](/image/preview%20image.png)
 
 ## Getting Started
 
